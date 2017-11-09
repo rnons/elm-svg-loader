@@ -1,0 +1,21 @@
+{
+  "name": "elm-svg-loader",
+  "version": "1.0.0",
+  "description": "inline SVG document inside Elm views",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rnons/elm-svg-loader.git"
+  },
+  "keywords": [
+    "elm",
+    "svg",
+    "loader"
+  ],
+  "author": "Ping Chen",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/rnons/elm-svg-loader/issues"
+  },
+  "homepage": "https://github.com/rnons/elm-svg-loader#readme"
+}
