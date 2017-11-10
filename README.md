@@ -1,6 +1,6 @@
 # SVG loader for Elm
 
-A webpack loader that inlines external SVG file into Elm views. It consists of a elm package and a npm package.
+A webpack loader that inlines external SVG file into Elm views. It consists of a elm package and a npm package. [DEMO](https://rnons.github.io/elm-svg-loader-example).
 
 Inspired by [elm-css-modules-loader](https://github.com/cultureamp/elm-css-modules-loader).
 
@@ -85,27 +85,28 @@ Then you can `import InlineSvg` as in the [Overview](#overview) section.
 
 1. Without `elm-svg-loader`, webpack will compile
 
-```
-{ icon } =
-    inline
-        { github = "./svg/github.svg"
-        , share = "./svg/share.svg"
-        }
-```
+    ```
+    { icon } =
+        inline
+            { github = "./svg/github.svg"
+            , share = "./svg/share.svg"
+            }
+    ```
 
-to
+    to
 
-```
-var _rnons$elm_svg_loader$Main$_p0 = _rnons$elm_svg_loader$InlineSvg$inline(
-	{github: './svg/mark-github.svg', share: './svg/share.svg'});
-```
+    ```
+    var _user$project$Main$_p0 = _rnons$elm_svg_loader$InlineSvg$inline(
+      {github: './svg/mark-github.svg', share: './svg/share.svg'});
+    ```
 
 2. `elm-svg-loader` will replace the svg file location with a `require` statement
-```
-var _rnons$elm_svg_loader$Main$_p0 = _rnons$elm_svg_loader$InlineSvg$inline(
-	{github: require('./svg/mark-github.svg'), share: require('./svg/share.svg')});
-```
 
-3. With the help of `raw-loader`, in runtime, `require('./svg/mark-github.svg')` will become the actual svg file content.
+    ```
+    var _user$project$Main$_p0 = _rnons$elm_svg_loader$InlineSvg$inline(
+      {github: require('./svg/mark-github.svg'), share: require('./svg/share.svg')});
+    ```
 
-4. The Elm package uses [elm-svg-parser](https://github.com/rnons/elm-svg-parser) to convert `String` to a `Html msg` so that it can be used in Elm views.
+3. With the help of `raw-loader`, `require('./svg/mark-github.svg')` will become the actual svg file content.
+
+4. With the help of [elm-svg-parser](https://github.com/rnons/elm-svg-parser), the `icon` function in `icon .github []` parses the svg file content `String` to a `Html msg` so that it can be used in Elm views.
