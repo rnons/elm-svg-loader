@@ -2,7 +2,7 @@ const loaderUtils = require("loader-utils");
 
 const mkRegexp = fnName => {
   const parts = [fnName, "\\(", "([^)]+)", "\\)"];
-  return new RegExp(parts.join("\\s*"));
+  return new RegExp(parts.join("\\s*"), 'g');
 };
 
 const transform = objString => {
@@ -28,7 +28,6 @@ const loader = function(source, inputSourceMap) {
 
   const regexp = mkRegexp(escapedTaggerName);
 
-  const matches = source.match(regexp);
   source = source.replace(
     regexp,
     (match, p1) => taggerName + "(" + transform(p1) + ")"

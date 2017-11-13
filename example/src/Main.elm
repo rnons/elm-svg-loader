@@ -3,6 +3,7 @@ module Main exposing (..)
 import Html exposing (Html, div, text)
 import Svg.Attributes
 import InlineSvg exposing (inline)
+import Child
 
 
 { icon } =
@@ -20,6 +21,7 @@ view () =
         [ icon .eye [ Svg.Attributes.class "icon" ]
         , icon .github [ Svg.Attributes.class "icon" ]
         , icon .code [ Svg.Attributes.class "icon" ]
+        , Child.view
         ]
 
 

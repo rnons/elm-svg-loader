@@ -1,6 +1,6 @@
 {
   "name": "elm-svg-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "inline SVG document inside Elm views",
   "main": "index.js",
   "repository": {
