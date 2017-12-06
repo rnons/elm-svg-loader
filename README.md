@@ -1,12 +1,8 @@
 # SVG loader for Elm
 
-A webpack loader that inlines external SVG file into Elm views. It consists of a elm package and a npm package. [DEMO](https://rnons.github.io/elm-svg-loader-example).
+A webpack loader that inlines external SVG file into Elm views. It consists of a elm package and a npm package. [DEMO](https://rnons.github.io/elm-svg-loader).
 
 Inspired by [elm-css-modules-loader](https://github.com/cultureamp/elm-css-modules-loader).
-
-<a target='_blank' rel='nofollow' href='http://app.codesponsor.io/link/Uwsz51h7LnBMxKdsoXrxgQps/rnons/elm-svg-loader'>
-  <img alt='Sponsor' width='888' height='68' src='http://app.codesponsor.io/embed/Uwsz51h7LnBMxKdsoXrxgQps/rnons/elm-svg-loader.svg' />
-</a>
 
 ## Overview
 
