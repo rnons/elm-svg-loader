@@ -10,7 +10,7 @@ Inspired by [elm-css-modules-loader](https://github.com/cultureamp/elm-css-modul
 module Main exposing (..)
 
 import Svg.Attributes
-imort InlineSvg exposing (inline)
+import InlineSvg exposing (inline)
 
 { icon } =
     inline
