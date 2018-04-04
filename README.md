@@ -1,5 +1,8 @@
 # SVG loader for Elm
 
+[![npm](https://img.shields.io/npm/v/elm-svg-loader.svg)](https://www.npmjs.com/package/elm-svg-loader)
+[![Elm package](https://img.shields.io/elm-package/v/rnons/elm-svg-loader.svg)](http://package.elm-lang.org/packages/rnons/elm-svg-loader/latest)
+
 A webpack loader that inlines external SVG file into Elm views. It consists of a elm package and a npm package. [DEMO](https://rnons.github.io/elm-svg-loader).
 
 Inspired by [elm-css-modules-loader](https://github.com/cultureamp/elm-css-modules-loader).
