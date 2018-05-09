@@ -40,7 +40,7 @@ npm install raw-loader elm-svg-loader --save-dev
 or
 
 ```
-yarn install raw-loader elm-svg-loader --dev
+yarn add raw-loader elm-svg-loader --dev
 ```
 
 ### Webpack config
