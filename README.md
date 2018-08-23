@@ -1,5 +1,7 @@
 # SVG loader for Elm
 
+**NOTE: This repo is not maintained any more. Feel free to fork and upload to elm-packages by yourself.**
+
 [![npm](https://img.shields.io/npm/v/elm-svg-loader.svg)](https://www.npmjs.com/package/elm-svg-loader)
 [![Elm package](https://img.shields.io/elm-package/v/rnons/elm-svg-loader.svg)](http://package.elm-lang.org/packages/rnons/elm-svg-loader/latest)
 
